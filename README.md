@@ -15,7 +15,7 @@ Predictions were performed using five different models: _Logistic Regression_, _
 
 The dataset was split into a 20% Training set and 80% Test set and then performed a Grid-search to find the optimal hyperparameters and a K-Fold Cross-Validation where K=5.
 
-###Results
+### Results
 * The Support Vector Machine is the worst model since it makes a random guess (AUC=0.51).
 
 * The K-Nearest Neighbors and the Multilayer Perceptron classifier are the two best models since they have a value near 1, the maximum value that can be achieved (respectively 0.81 and 0.83).
@@ -23,11 +23,11 @@ The dataset was split into a 20% Training set and 80% Test set and then performe
 <img src="./docs/classifiers_scores.png" width="400">
 </p>
 
-###Result Comparisons
+### Result Comparisons
 Decision Tree performances' were compared with [[3]](http://www.ijctjournal.org/Volume4/Issue4/IJCT-V4I4P19.pdf) and [[4]](https://arxiv.org/pdf/1812.10383.pdf), that both used the same dataset with a dtree classifier. In the below image, it is possible to see the results.
 <p align="center">
 <img src="./docs/comparison.png" width="250">
 </p>
 
-##Conclusions
+## Conclusions
 The dataset was truly imbalanced; almost all features have values of 0, and only a few target variables had a positive result for the Biopsy test (and for all the other target features). Using different metrics and implementing sampling techniques on the training set helped a lot, but models still oversampled the test set. The next step could be to try a Cost-Sensitive Learning that considers the misclassification costs to minimize the total cost and try a Multi-label classification with the sum of all the four target features. Several classification tasks could be done using this dataset, but the dataset's most challenging part. Maybe collecting more data could be a possible solution. 
