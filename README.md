@@ -7,7 +7,7 @@ Eleven years ago, cervical cancer ranked the third most common cancer among wome
 
 _This project aims to detect cervical cancer based on the Biopsia response._
 
-## Dataset and Evaluation
+## Dataset 
 The dataset is the **Cervical cancer (Risk Factors) Data Set** from the UCI Machine Learning Repository[[2]](https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29). It focuses on predicting indicators/diagnosis of cervical cancer, and it was collected at ’Hospital Universitario de Caracas’ in Caracas, Venezuela. Data comprises demographic information, habits, and historical medical records of 858 patients. Several patients decided not to answer some of the questions because of privacy concerns. The dataset is composed of 858 instances and 36 attributes. Target variables are four: Hinselmann, Schiller, Cytology, and Biopsy.
 
 ## Evaluation
